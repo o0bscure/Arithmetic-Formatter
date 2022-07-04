@@ -22,8 +22,7 @@ def arithmetic_arranger(problems,res=False):
         #check the operands length
         if len(equation[0]) > 4 or len(equation[2]) > 4:
             return "Error: Numbers cannot be more than four digits."
-        
-    
+          
         spaces = " "
         if len(equation[2]) > len(equation[0]) :
             spaces = " "
@@ -45,9 +44,7 @@ def arithmetic_arranger(problems,res=False):
         else : pass
         
         equation_list.append(equation)
-        
-
-        
+           
     row1 = ""
     row2 = ""
     row3 = ""
@@ -69,11 +66,8 @@ def arithmetic_arranger(problems,res=False):
     #return arranged_problems
     return solution
 
-
-
 #create a list of cases to test the program
 tests = [['3801 - 2', '123 + 49'],['1 + 2', '1 - 9380'],['3 + 855', '3801 - 2', '45 + 43', '123 + 49'],['11 + 4', '3801 - 2999', '1 + 2', '123 + 49', '1 - 9380'],['44 + 815', '909 - 2', '45 + 43', '123 + 49','888 + 40', '653 + 87'],['3 / 855', '3801 - 2', '45 + 43', '123 + 49'],['24 + 85215', '3801 - 2', '45 + 43', '123 + 49'],['98 + 3g5', '3801 - 2', '45 + 43', '123 + 49']]
-
 
 #looping through all the possible cases
 for test in tests:
